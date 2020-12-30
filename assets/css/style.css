@@ -28,3 +28,15 @@ h2, h5{
 .trabajos-color{
     background-color: #DDEAEA;
 }
+
+.escala{
+    transform: scale(1);
+    animation: mymove 2s infinite;
+    animation-direction: normal;
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+    from {transform: scale(1);}
+    to {transform: scale(1.5);}
+  }
