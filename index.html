@@ -19,6 +19,27 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
 <body>
+
+   <!-- ///////////////MODAL INICIO/////////////////////////// -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>Pagina de David Aravena <br>
+                v1.0 (BETA)</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Entrar</button>
+        </div>
+      </div>
+    </div>
+</div>
       
     <header>
         <!-- ///////////////NAVBAR////////////////// -->
@@ -53,20 +74,18 @@
             </div>
         </nav>
 
-          <!-- ////////////////////IMAGEN HEADER////////////////////////// -->
-
-          <!-- //////carrusel//////////////// -->
+          <!-- ////////////////////CARRUSEL IMAGEN HEADER////////////////////////// -->
 
           <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="10000">
-                <div class="imagen-header"></div>
-              </div>
-              <div class="carousel-item" data-interval="2000">
-                <div class="imagen-header"></div>
+              <div class="carousel-item active">
+                <div class="imagen1-header"></div>
               </div>
               <div class="carousel-item">
-                <div class="imagen-header"></div>
+                <div class="imagen2-header"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="imagen3-header"></div>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -80,87 +99,124 @@
           </div>
     </header>
 
-            <!-- ////////////////////////////////////////////////////ESTUDIOS EXPERIENCIA LABORAL Y CERTIFICADOS///////////////// -->
-            <section id="formacion">
-              <div class="container my-5">
-                  <div class="row">
-                      <div class="col-md-12">
-  
-                          <div class="card-group">
-                              <div class="card">
-                                  <i class="fas fa-graduation-cap fa-7x text-center escala"></i>
-                                <div class="card-body">
-                                  <h5 class="card-title">Educacion</h5>
-                                  <p class="card-text">1990-2000
-                                      Estudios Enseñanza Básica
-                                      Colegio Carlos Salinas Lagos de Talca
-                                  </p>
-                                  <p class="card-text">2000-2004
-                                      Estudios Enseñanza Media
-                                      Colegio Piaget de Talca
-                                  </p>
-                                  <p class="card-text">2005-2009
-                                      Estudios Universitarios
-                                      Comunicación Audiovisual 
-                                      Universidad Santo Tomás
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="card">
-                                  <i class="fas fa-briefcase fa-7x text-center escala"></i>
-                                <div class="card-body">
-                                  <h5 class="card-title">Experiencia laboral</h5>
-                                  <p class="card-text">2009- 2010
-                                      Editor y camarógrafo 
-                                      en canal 30 de San javier,
-                                      Talca
-                                  </p>
-                                  <p class="card-text">
-                                      2013-2013
-                                      Camarógrafo y editor en canal 
-                                      5 de la ciudad de Linares ,
-                                      séptima región
-                                      Camarógrafo editor y 
-                                      post productor en canal 30 de 
-                                      San Javier, Talca
-                                  </p>
-                                  <p class="card-text">
-                                      2015- 2020
-                                      Post Productor de video 
-                                      en Flesad publicidad,
-                                      Santiago.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="card">
-                                  <i class="fas fa-address-card fa-7x text-center escala"></i>
-                                <div class="card-body">
-                                  <h5 class="card-title">Certificados</h5>
-                                  <p class="card-text">2019-2020
-                                      Next U
-                                      Programación para 
-                                      bases de datos Next U
-                                  </p>
-                                  <p class="card-text">2020
-                                      Desarrollador Full Stack 
-                                      Desafio Latam (en progreso) <span class="badge badge-secondary">Nueva habilidad</span> 
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                              
-  
+    <main id="historia">
+
+      <section class="d-none d-md-none d-lg-block">
+
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="text-center py-5">
+                          <!-- /////////// QUIEN SOY ///////////////// -->
+                          <button type="button" class="btn escala" data-toggle="tooltip" data-placement="top" title="Programador-frontend-html-css-js">
+                              <h2>¿Quien soy?</h2>
+                            </button>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6"> <!-- /////////// HISTORIA ///////////////// -->
+                              <p>Mi nombre es David Aravena, tengo 34 años. Mi profesión es post productor audiovisual. Trabajé 5 años en la empresa FLESAD desarrollando piezas gráficas animadas para pantallas de publicidad. Si bien me gustaba mi trabajo, sentía que me estaba quedando estancado y tenía deseos de dar un paso más allá. Es por eso que empecé a internalizarme en la programación full stack y a realizar cursos online en mis ratos libres..
+                              </p>
+                          </div>
+                          <div class="col-md-6"> <!-- /////////// HISTORIA ///////////////// -->
+                              <p>En enero del 2020 producto del estallido social y la incipiente pandemia perdí mi trabajo y decidí dar un vuelco en mi carrera y aprender programación full stack de manera más profesional es por eso que estoy actualmente estudiando en Desafío LATAM y sueño a futuro convalidar todos mis conocimientos en una plataforma.</p>
+                          </div>
                       </div>
                   </div>
               </div>
-          </section>
+          </div>
+
+      </section>
+
+            <!-- ////////////////////////////////////////////////////ESTUDIOS EXPERIENCIA LABORAL Y CERTIFICADOS///////////////// -->
+      <section id="formacion">
+
+        <div class="container my-5">
+            <h2 class="text-center py-4">Mi experiencia!</h2>
+            <div class="row">
+                    <div class="card-group">
+
+                      <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fas fa-graduation-cap fa-7x text-center escala"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Educacion</h5>
+                            <p class="card-text">1990-2000
+                                Estudios Enseñanza Básica
+                                Colegio Carlos Salinas Lagos de Talca
+                            </p>
+                            <p class="card-text">2000-2004
+                                Estudios Enseñanza Media
+                                Colegio Piaget de Talca
+                            </p>
+                            <p class="card-text">2005-2009
+                                Estudios Universitarios
+                                Comunicación Audiovisual 
+                                Universidad Santo Tomás
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fas fa-briefcase fa-7x text-center escala"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Experiencia laboral</h5>
+                            <p class="card-text">2009- 2010
+                                Editor y camarógrafo 
+                                en canal 30 de San javier,
+                                Talca
+                            </p>
+                            <p class="card-text">
+                                2013-2013
+                                Camarógrafo y editor en canal 
+                                5 de la ciudad de Linares ,
+                                séptima región
+                                Camarógrafo editor y 
+                                post productor en canal 30 de 
+                                San Javier, Talca
+                            </p>
+                            <p class="card-text">
+                                2015- 2020
+                                Post Productor de video 
+                                en Flesad publicidad,
+                                Santiago.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fas fa-address-card fa-7x text-center escala"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Certificados</h5>
+                            <p class="card-text">2019-2020
+                                Next U
+                                Programación para 
+                                bases de datos Next U
+                            </p>
+                            <p class="card-text">2020
+                                Desarrollador Full Stack 
+                                Desafio Latam (en progreso) <span class="badge badge-secondary">Nueva habilidad</span> 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+            </div>
+        </div>
+
+    </section>
   
 
     <!-- ///////////////////////////////////// PORTAFOLIO //////////////////////////// -->
     <section id="portafolio">
+
       <div class="container px-auto">
+          <h2 class="text-center py-4">Mis ultimos trabajos!</h2>
           <div class="row">
-              <div class="col-md-4">
+              <div class="col-lg-4">
                   <div class="card trabajos-color" style="width: 18rem;">
                       <img src="assets/img/imagen_meetandcoffee.png" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -170,7 +226,7 @@
                       </div>
                     </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4">
                   <div class="card trabajos-color" style="width: 18rem;">
                       <img src="assets/img/imagen_iguana.png" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -180,7 +236,7 @@
                       </div>
                     </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4">
                   <div class="card trabajos-color" style="width: 18rem;">
                       <img src="assets/img/imagen_suricata.png" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -192,7 +248,29 @@
               </div>
           </div>
       </div>
+
   </section>
+
+  </main>
+
+  <!-- ////////////////////////////////////////FOOTER//////////////////////////////////////////////////////7 -->
+  <footer class="bg-dark py-4 mt-5">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center">
+                <h2 id="footer-david-aravena">David Aravena</h2>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+                <a href="https://www.facebook.com/" class="px-2 text-light" target="_blanck"><i class="fab fa-facebook-square fa-4x"></i></a>
+                <a href="https://www.youtube.com" class="px-2 text-light" target="_blanck"><i class="fab fa-youtube fa-4x"></i></a>
+                <a href="https://www.youtube.com" class="px-2 text-light" target="_blanck"><i class="fab fa-github fa-4x"></i> </a>
+                <a href="https://www.youtube.com" class="px-2 text-light" target="_blanck"><i class="fab fa-twitter-square fa-4x"></i>  </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
 
 
      <!-- /////////////////////////// cdn de js de bootstrap ///////////////////// -->

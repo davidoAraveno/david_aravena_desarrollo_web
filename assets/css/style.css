@@ -1,11 +1,24 @@
 body{
     width: 100%;
-    font-family: 'Roboto', sans-serif;
 }
 
-.imagen-header{
+.imagen1-header{
     height: 75vh;
-    background-image: url("../img/imagen_header.jpg");
+    background-image: url("../img/imagen1_header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen2-header{
+    height: 75vh;
+    background-image: url("../img/imagen2_header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen3-header{
+    height: 75vh;
+    background-image: url("../img/imagen3_header.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -13,6 +26,8 @@ body{
 /* ////////peso para titulos////// */
 h2, h5{
     font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /* //////////posicionamiento imagen header justo debajo del navbar////////////// */
@@ -23,6 +38,13 @@ h2, h5{
 /* //////peso para texto david aravena del navbar////////// */
 #titulo-david-aravena{
     font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#footer-david-aravena{
+    color: white;
+
 }
 
 .trabajos-color{
@@ -40,3 +62,20 @@ h2, h5{
     from {transform: scale(1);}
     to {transform: scale(1.5);}
   }
+
+
+
+  @media (max-width: 992px) {
+    #portafolio .col-lg-4 {
+      padding: 2rem 0;
+      margin-left: 13.5rem;
+    }
+
+    #formacion .col-lg-4{
+        padding: 2rem 0;
+    }
+
+    #footer-david-aravena{
+        padding: 2rem 0;
+    }
+}
