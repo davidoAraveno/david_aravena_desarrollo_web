@@ -2,6 +2,8 @@ body{
     width: 100%;
 }
 
+
+/* ////////////imagenes del carrusel///////////////////// */
 .imagen1-header{
     height: 75vh;
     background-image: url("../img/imagen1_header.jpg");
@@ -47,10 +49,13 @@ h2, h5{
 
 }
 
+/* ///////////color fondos de los cards de la seccion mis ultimos trabajos////////////////// */
 .trabajos-color{
     background-color: #DDEAEA;
 }
 
+
+/* ////tamaño animado de titulos///// */
 .escala{
     transform: scale(1);
     animation: mymove 2s infinite;
@@ -58,10 +63,16 @@ h2, h5{
     animation-direction: alternate;
 }
 
+#portafolio{
+    background-color: rgba(0, 0, 0, .1)
+}
+
 @keyframes mymove {
     from {transform: scale(1);}
     to {transform: scale(1.5);}
   }
+
+
 
 
 
@@ -78,4 +89,11 @@ h2, h5{
     #footer-david-aravena{
         padding: 2rem 0;
     }
+}
+
+@media (max-width: 767px){
+    #portafolio .col-lg-4 {
+        padding: 2rem 0;
+        margin-left: 7rem;
+      }
 }
